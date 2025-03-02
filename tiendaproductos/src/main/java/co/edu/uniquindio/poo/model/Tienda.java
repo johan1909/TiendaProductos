@@ -172,14 +172,14 @@ public class Tienda {
      * @return
      */
 
-    public String actualizarCliente( String nombre, String identificacion, String diteccion, String telefono, String email, ArrayList <Producto> listaProductosComprados){
+    public String actualizarCliente( String nombre, String identificacion, String direccion, String telefono, String email, ArrayList <Producto> listaProductosComprados){
 
         String mensaje = " no encontrado";
         Cliente clienteEncontrado = buscarCliente(identificacion);
         if(clienteEncontrado != null){
             clienteEncontrado.setNombre(nombre);
             clienteEncontrado.setIdentificacion(identificacion);
-            clienteEncontrado.setDiteccion(diteccion);
+            clienteEncontrado.setDireccion(diteccion);
             clienteEncontrado.setTelefono(telefono);
             clienteEncontrado.setEmail(email);
             clienteEncontrado.setListaProductosComprados(listaProductosComprados);
