@@ -1,11 +1,11 @@
 # tiendaproductos
 
-Descripciín basisca de su Proyecto de POO ...
+En este proyecto se construyó un programa que permite tener el inventario de una tienda, y modificar datos; de los productos, los clientes y las ventas.
 
 # Autores
 
-- Autor 1
-- Autor 2
+- Johan Camilo Bedoya
+- Diego Alejandro Florez
 
 # Herramientas
 
