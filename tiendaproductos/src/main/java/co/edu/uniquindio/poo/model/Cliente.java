@@ -6,17 +6,17 @@ public class Cliente {
 
     private String nombre;
     private String identificacion; 
-    private String diteccion; 
+    private String direccion; 
     private String telefono; 
     private String email;
     private ArrayList <Producto> listaProductosComprados;
 
 
 
-    public Cliente(String nombre, String identificacion, String diteccion, String telefono, String email, ArrayList <Producto> listaProductosComprados) {
+    public Cliente(String nombre, String identificacion, String direccion, String telefono, String email, ArrayList <Producto> listaProductosComprados) {
         this.nombre = nombre;
         this.identificacion = identificacion;
-        this.diteccion = diteccion;
+        this.direccion = direccion;
         this.telefono = telefono;
         this.email = email;
         this.listaProductosComprados = new ArrayList<Producto>();
@@ -48,14 +48,14 @@ public class Cliente {
 
 
 
-    public String getDiteccion() {
-        return diteccion;
+    public String getDireccion() {
+        return direccion;
     }
 
 
 
-    public void setDiteccion(String diteccion) {
-        this.diteccion = diteccion;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
 
@@ -127,7 +127,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente: " + nombre + "\nidentificacion:" + identificacion + "\nditeccion:" + diteccion
+        return "Cliente: " + nombre + "\nidentificacion:" + identificacion + "\ndireccion:" + direccion
                 + "\ntelefono" + telefono + "\nemail" + email + "\nlistaProductosComprados" + listaProductosComprados
                 + "";
     }
