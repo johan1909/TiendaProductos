@@ -4,7 +4,7 @@ public class Producto {
 
     private String nombre;
     private String codigo;
-    private  Double precio; 
+    private Double precio; 
     private String categoria;
     private int stock;
 
@@ -108,7 +108,7 @@ public class Producto {
     @Override
     public String toString() {
     return "Producto: " + nombre + "\ncodigo:" + codigo + "\nprecio:" + precio + "\ncategoria:" + categoria
-                + "\nstock:" + stock + "";
+                + "\nstock" + stock + "";
     }
 
 
@@ -118,7 +118,7 @@ public class Producto {
         if (cantidad >= 0) {
             this.stock = cantidad;
         } else {
-            System.out.println("La cantidad no puede ser negativa.");
+            System.out.println("La cantidad no puede ser menor a 0.");
         }
     }
 
