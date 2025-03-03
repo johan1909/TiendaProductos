@@ -35,10 +35,10 @@ public class App {
         
 
         String nombreCliente =JOptionPane.showInputDialog(null, " Ingresar el nombre del Cliente");
-        String Identificacion =JOptionPane.showInputDialog(null, " Ingresar el nombre del Cliente");
-        String Direccion =JOptionPane.showInputDialog(null, " Ingresar el nombre del Cliente");
-        String telefono =JOptionPane.showInputDialog(null, " Ingresar el nombre del Cliente");
-        String Email =JOptionPane.showInputDialog(null, " Ingresar el nombre del Cliente");
+        String Identificacion =JOptionPane.showInputDialog(null, " Ingresar la identificaion del Cliente");
+        String Direccion =JOptionPane.showInputDialog(null, " Ingresar la direccion del Cliente");
+        String telefono =JOptionPane.showInputDialog(null, " Ingresar el telefono del Cliente");
+        String Email =JOptionPane.showInputDialog(null, " Ingresar el email del Cliente");
         ArrayList <Producto> listaProductosComprados = new ArrayList<Producto>();
 
 
@@ -67,6 +67,7 @@ public class App {
         tienda.registrarCliente(cliente);
         tienda.registrarCliente(cliente2);
         tienda.registrarVenta(venta);
+        cliente.agregarProducto(producto2);
 
         
         JOptionPane.showMessageDialog(null, tienda );
