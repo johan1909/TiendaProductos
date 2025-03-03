@@ -11,12 +11,12 @@ public class Venta {
     private Double montoTotal;
 
 
-    public Venta(LocalDate fecha, Cliente cliente, Producto producto, int cantidad, Double montoTotal) {
+    public Venta(LocalDate fecha, Cliente cliente, Producto producto, int cantidad) {
         this.fecha = fecha;
         this.cliente = cliente;
         this.producto = producto;
         this.cantidad = cantidad;
-        this.montoTotal = producto.getPrecio()*cantidad;
+        this.montoTotal = this.calcularMontoTotal(producto, cantidad);
     }
 
 
@@ -72,6 +72,10 @@ public class Venta {
 
     
 
+    public Double calcularMontoTotal (Producto producto, int cantidad){
+        Double montoTotal = producto.getPrecio()*cantidad;
+        return montoTotal;
+    }
 
     
 
