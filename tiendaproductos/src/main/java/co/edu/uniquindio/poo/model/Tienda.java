@@ -165,7 +165,7 @@ public class Tienda {
      * Actualiza un cliente mediante el numero de identificacion
      * @param nombre
      * @param identificacion
-     * @param diteccion
+     * @param direccion
      * @param telefono
      * @param email
      * @param listaProductosComprados
@@ -179,7 +179,7 @@ public class Tienda {
         if(clienteEncontrado != null){
             clienteEncontrado.setNombre(nombre);
             clienteEncontrado.setIdentificacion(identificacion);
-            clienteEncontrado.setDireccion(diteccion);
+            clienteEncontrado.setDireccion(direccion);
             clienteEncontrado.setTelefono(telefono);
             clienteEncontrado.setEmail(email);
             clienteEncontrado.setListaProductosComprados(listaProductosComprados);
@@ -374,4 +374,33 @@ public class Tienda {
         }
         return mensaje;
     }
+
+
+
+    @Override
+    public String toString() {
+        return "Tienda:" + nombre + "\nubicacion:" + ubicacion + "\nnit:" + nit + "\nlista de Productos:"
+                + listaProductos + "\nlista de Clientes:" + listaClientes + "\nlistaVentas=" + listaVentas + "";
+    }
+
+
+
+
+    public Double calcularMontoTotal(Venta venta){
+        Double montoTotal = venta.getMontoTotal();
+        return montoTotal;
+
+    }
+
+
+
+    public void actualizarStockTienda(Producto producto,int cantidad){
+        producto.actualizarStock(cantidad);
+    }
+
+
+
+
+
+    
 }
