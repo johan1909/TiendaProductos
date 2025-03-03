@@ -4,7 +4,7 @@ En este proyecto se construyó un programa que permite tener el inventario de un
 
 # Autores
 
-- Johan Camilo Bedoya
+- Johan Bedoya
 - Diego Alejandro Florez
 
 # Herramientas
